@@ -11,6 +11,10 @@ class Shkaf:
     def ind(self):
         return self._ind
 
+    def someprint(self):
+        print(self.ind)
+
+
     def add(self, javon, kitob: Kitob):
         in_javon = self.javon_list[javon - 1]
         return in_javon.add(kitob)
