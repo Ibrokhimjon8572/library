@@ -5,7 +5,7 @@ class Kutubhona:
     def __init__(self) -> None:
         self.qavat_list: list[Qavat] = [Qavat(i) for i in range(1, 4)]
         print(self.qavat_list)
-        
+
 
     def add(self, qavat, shkaf, javon, kitob: Kitob):
         qavat = self.qavat_list[qavat - 1]
@@ -14,3 +14,5 @@ class Kutubhona:
     def contain(self, qavat, shkaf, javon, kitob: Kitob):
         qavat = self.qavat_list[qavat - 1]
         return qavat.contain(shkaf, javon, kitob)
+
+    print('some')
